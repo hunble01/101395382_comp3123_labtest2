@@ -40,19 +40,19 @@ npm start
 - CSS for styling
 
 ## Screenshots
-![Screenshot 1] (src/assets/1.png)
+![Screenshot 1](src/assets/1.png)
 
 
 
-![Screenshot 2] (src/assets/2.png)
+![Screenshot 2](src/assets/2.png)
 
 
 
-![Screenshot 3] (src/assets/3.png)
+![Screenshot 3](src/assets/3.png)
 
 
 
-![Screenshot 4] (src/assets/4.png)
+![Screenshot 4](src/assets/4.png)
 
 ## API Documentation
 - [OpenWeatherMap Current Weather API](https://openweathermap.org/current)
