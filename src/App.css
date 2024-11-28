@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* App Background */
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  background-image: url('/clouds.jpg'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Weather Card */
+.weather-card {
+  width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.weather-card .city-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-card .temperature {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.weather-date {
+  font-size: 1rem;
+  margin-top: 30px; /* Increase the margin to push the date further down */
+  font-style: italic;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card .description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-card .additional-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Forecast Slider */
+.forecast-slider {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.forecast-item {
+  width: 60px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.forecast-item h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.forecast-item img {
+  margin: 5px 0;
+}
+
+.forecast-temp {
+  font-size: 14px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+
+.search-button {
+  padding: 10px;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
